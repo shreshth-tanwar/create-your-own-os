@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InventorOS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BOOT SCREEN -->
+
+    <div id="boot-screen">
+        <div class="boot-content">
+            <h1>INVENTOR OS</h1>
+            <div class="loader"></div>
+            <p>Initializing Innovation Engine...</p>
+        </div>
+    </div>
+
+    <!-- LOCK SCREEN -->
+
+    <div id="lock-screen">
+
+        <div class="lock-content">
+            <h1 id="lock-time">12:00</h1>
+            <p>The Operating System of a Young Innovator</p>
+
+            <button id="enter-btn">
+                Enter InventorOS
+            </button>
+        </div>
+
+    </div>
+
+    <!-- DESKTOP -->
+
+    <div id="desktop">
+
+        <!-- Desktop Icons -->
+
+        <div class="desktop-icons">
+
+            <div class="icon" onclick="openWindow('about-window')">
+                🚀
+                <span>About</span>
+            </div>
+
+            <div class="icon" onclick="openWindow('projects-window')">
+                🧠
+                <span>Projects</span>
+            </div>
+
+            <div class="icon" onclick="openWindow('rawbot-window')">
+                🤖
+                <span>RAWBOT</span>
+            </div>
+
+            <div class="icon" onclick="openWindow('mission-window')">
+                🌌
+                <span>Mission Control</span>
+            </div>
+
+            <div class="icon" onclick="openWindow('terminal-window')">
+                💻
+                <span>Terminal</span>
+            </div>
+
+            <div class="icon" onclick="openWindow('gallery-window')">
+                📷
+                <span>Gallery</span>
+            </div>
+
+        </div>
+
+        <!-- ABOUT WINDOW -->
+
+        <div class="window" id="about-window">
+
+            <div class="title-bar">
+                <span>About Shreshth</span>
+
+                <div>
+                    <button onclick="closeWindow('about-window')">✕</button>
+                </div>
+            </div>
+
+            <div class="window-content">
+
+                <h2>Shreshth Tanwar</h2>
+
+                <p>
+                    Student Innovator, Robotics Builder,
+                    Future Aerospace Engineer.
+                </p>
+
+                <p>
+                    Welcome to InventorOS —
+                    my digital headquarters for innovation,
+                    engineering and technology projects.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECTS WINDOW -->
+
+        <div class="window" id="projects-window">
+
+            <div class="title-bar">
+                <span>Projects Hub</span>
+                <button onclick="closeWindow('projects-window')">✕</button>
+            </div>
+
+            <div class="window-content">
+
+                <div class="project-card">
+                    <h3>Path Guard</h3>
+                    <p>Smart bridge monitoring system.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>FaunaTrack</h3>
+                    <p>AI wildlife protection platform.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Stove Shield</h3>
+                    <p>Smart LPG safety solution.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>CineAcademy</h3>
+                    <p>Creative filmmaking initiative.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RAWBOT WINDOW -->
+
+        <div class="window" id="rawbot-window">
+
+            <div class="title-bar">
+                <span>RAWBOT Control Center</span>
+                <button onclick="closeWindow('rawbot-window')">✕</button>
+            </div>
+
+            <div class="window-content">
+
+                <h2>RAWBOT</h2>
+
+                <p>
+                    Custom robots built around customer needs.
+                </p>
+
+                <ul>
+                    <li>Personal Robots</li>
+                    <li>Educational Robots</li>
+                    <li>Business Automation Robots</li>
+                    <li>Custom Engineering Solutions</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- MISSION CONTROL -->
+
+        <div class="window" id="mission-window">
+
+            <div class="title-bar">
+                <span>Mission Control</span>
+                <button onclick="closeWindow('mission-window')">✕</button>
+            </div>
+
+            <div class="window-content">
+
+                <h2>Future Aerospace Engineer</h2>
+
+                <div class="stats-grid">
+
+                    <div class="stat">
+                        <h3>Projects</h3>
+                        <p>10+</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>Ideas</h3>
+                        <p>∞</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>Status</h3>
+                        <p>Building</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TERMINAL -->
+
+        <div class="window" id="terminal-window">
+
+            <div class="title-bar">
+                <span>Inventor Terminal</span>
+                <button onclick="closeWindow('terminal-window')">✕</button>
+            </div>
+
+            <div class="window-content terminal">
+
+                <p>> boot inventoros</p>
+                <p>> loading innovation modules...</p>
+                <p>> loading projects...</p>
+                <p>> aerospace systems online</p>
+                <p>> rawbot online</p>
+                <p>> status: READY</p>
+
+            </div>
+
+        </div>
+
+        <!-- GALLERY -->
+
+        <div class="window" id="gallery-window">
+
+            <div class="title-bar">
+                <span>Gallery</span>
+                <button onclick="closeWindow('gallery-window')">✕</button>
+            </div>
+
+            <div class="window-content">
+
+                <div class="gallery-grid">
+
+                    <div class="gallery-item">🚀</div>
+                    <div class="gallery-item">🤖</div>
+                    <div class="gallery-item">🌌</div>
+                    <div class="gallery-item">⚙️</div>
+                    <div class="gallery-item">🛰️</div>
+                    <div class="gallery-item">💡</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- START MENU -->
+
+        <div id="start-menu">
+
+            <h3>InventorOS</h3>
+
+            <button onclick="openWindow('about-window')">
+                About
+            </button>
+
+            <button onclick="openWindow('projects-window')">
+                Projects
+            </button>
+
+            <button onclick="openWindow('rawbot-window')">
+                RAWBOT
+            </button>
+
+            <button onclick="openWindow('terminal-window')">
+                Terminal
+            </button>
+
+        </div>
+
+        <!-- TASKBAR -->
+
+        <div id="taskbar">
+
+            <button id="start-btn">
+                🚀
+            </button>
+
+            <div id="taskbar-center">
+                InventorOS v1.0
+            </div>
+
+            <div id="clock">
+                00:00
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
